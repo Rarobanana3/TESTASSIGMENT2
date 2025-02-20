@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover the Wonders of the Middle East</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffffff, #ffffff);
+            color: #000000;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff6a30;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .slideshow-container {
+            width: 100%;
+            height: 30vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .slideshow {
+            display: flex;
+            width: 200%;
+            animation: scroll 30s linear infinite;
+        }
+        .slideshow img {
+            width: 25vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff6a30;
+        }
+    </style>           
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="ttd.html">Things to Do</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="description">
+            <h2>Welcome to Magic Carpet!</h2>
+            <p>The Middle East is a historically, culturally, and environmentally rich region. 
+              Every traveler can discover something captivating here, from the vibrant souks 
+              brimming with exotic spices to the beautiful dunes of the desert.</p>
+            <p>Wonder at the amazing sights, take in the glory of past civilizations,
+              and get immersed in a culture as warm as its desert temperature. Your trip 
+              will be remembered whether you're diving in the Mediterranean Sea, 
+               walking around the great pyramids, and of course sampling the best Middle Eastern cuisine.</p>
+        </section>
+
+
+        <section class="slideshow-container">
+          <div class="slideshow">
+              <img src="images/Desert.jpg" alt="Desert Scene">
+              <img src="images/Market.jpg" alt="Traditional Bazaar">
+              <img src="images/ruins.jpg" alt="Ancient Ruins">
+              <img src="images/oasis.jpg" alt="Oasis Retreat">
+              <img src="images/Desert.jpg" alt="Desert Scene">
+              <img src="images/Market.jpg" alt="Traditional Bazaar">
+              <img src="images/ruins.jpg" alt="Ancient Ruins">
+              <img src="images/oasis.jpg" alt="Oasis Retreat">
+          </div>
+      </section>
+        <section class="description">
+            <h2>Why Visit the Middle East?</h2>
+            <p>The Middle East is a fascinating blend of old and new, where tradition meets modernity. Cities like Dubai and Doha boast futuristic skylines, while ancient towns like Petra and Damascus tell stories of a time long past.</p>
+            <p>The region is home to some of the most hospitable people youll ever meet, eager to share their culture, music, and incredible cuisine. From the aromatic tagines of Morocco to the rich and creamy hummus of Lebanon, every meal is an experience in itself.</p>
+            <p>Whether you're an adventurer seeking thrilling desert escapades, a history enthusiast delving into ancient sites, or a foodie eager to explore vibrant markets, the Middle East offers endless possibilities.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Magic Carpet. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/ttd.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffffff, #ffffff);
+            color: #000000;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff6a30;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .activity {
+            background: #ff6b3041;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .activity:hover {
+            transform: scale(1.05);
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff6a30;
+        }
+            .description {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="ttd.html">Things to Do</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="description">
+        <h2>What is there to do?</h2>
+        <p>Explore important religious sites such as the architectural wonders 
+            that is Burj Khalifa in Dubai,the distinctive rock formations of 
+            Cappadocia in Turkey, historical sites such as Jordan's ancient 
+            city of Petra, and the Great Mosque of Mecca in Saudi Arabia, 
+            which is regarded as Islam's holiest place. </p>
+        </p>
+    </section>
+    
+    <main>
+        <section class="activities">
+            <div class="activity">
+                <img src="images/Mecca.jpg" >
+                <h1>Mecca</h1>
+                <p>Discover the most sacred location in Islam.</p>
+            </div>
+            <div class="activity">
+                <img src="images/Petra.jpg">
+                <h1>Petra</h1>
+                <p>Visit the famous archaeological site in Jordan's southwestern desert.</p>
+            </div>
+            <div class="activity">
+                <img src="images/Cappadocia.jpg">
+                <h1>Cappadocia</h1>
+                <p>Take a hot air balloon ride in Turkey and enjoy breathtaking sights.</p>
+            </div>
+            <div class="activity">
+                <img src="images/Burj.jpg">
+                <h1>Burj Khalifa</h1>
+                <p>Explore Dubai's tallest structure in the world.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 WIP. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffffff, #ffffff);
+            color: #000000;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff6a30;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+            .description {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff6a30;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="ttd.html">Things to Do</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="gallery">
+            <img src="images/Ceremonies.jpg">
+            <img src="images/Food.jpg">
+            <img src="images/Market1.jpg" >
+            <img src="images/Market2(NIGHT).jpg" >
+            <img src="images/Dubai.png" >
+            <img src="images/gallery6.jpg" >
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 WIP. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
